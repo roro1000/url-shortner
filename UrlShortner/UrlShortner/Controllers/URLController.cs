@@ -22,5 +22,12 @@ namespace UrlShortner.Controllers
             var result = await _service.AddShortURL(request.URL);
             return Ok(result);
         }
+
+        [HttpGet("/{id:regex(^[[a-zA-Z0-9]]{{8,}}$)}")]
+        public async Task<IActionResult> GetLongURL(string id)
+        {
+            var url = await _service.GetLongURL(id);
+            return Redirect(url);
+        }
     }
 }

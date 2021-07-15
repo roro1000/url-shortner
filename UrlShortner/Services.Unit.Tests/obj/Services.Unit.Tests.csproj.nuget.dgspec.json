@@ -1,17 +1,72 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspaces\\UrlShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj": {}
+    "C:\\Workspaces\\URLShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Workspaces\\UrlShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj": {
+    "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspaces\\UrlShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj",
-        "projectName": "Services.Unit.Tests",
-        "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj",
+        "projectUniqueName": "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\roisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\Services.Unit.Tests\\obj\\",
+        "outputPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roisi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspaces\\URLShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspaces\\URLShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj",
+        "projectName": "Services.Unit.Tests",
+        "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Services.Unit.Tests\\Services.Unit.Tests.csproj",
+        "packagesPath": "C:\\Users\\roisi\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Services.Unit.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +85,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj"
+              "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj"
               },
-              "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\Services.csproj": {
-                "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\Services.csproj"
+              "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\Services.csproj": {
+                "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\Services.csproj"
               }
             }
           }
@@ -88,14 +143,14 @@
         }
       }
     },
-    "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
+    "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj",
+        "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\roisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\obj\\",
+        "outputPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -113,7 +168,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj": {
+                "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -128,10 +187,6 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
-            },
-            "Microsoft.AspNetCore.Http": {
-              "target": "Package",
-              "version": "[2.2.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -165,14 +220,14 @@
         }
       }
     },
-    "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\Services.csproj": {
+    "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\Services.csproj",
+        "projectUniqueName": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\Services.csproj",
+        "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\Services.csproj",
         "packagesPath": "C:\\Users\\roisi\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Services\\obj\\",
+        "outputPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -191,8 +246,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
-                "projectPath": "C:\\Workspaces\\UrlShortner\\UrlShortner\\US.Domain\\Domain.csproj"
+              "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj": {
+                "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\Common\\Common.csproj"
+              },
+              "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj": {
+                "projectPath": "C:\\Workspaces\\URLShortner\\UrlShortner\\US.Domain\\Domain.csproj"
               }
             }
           }

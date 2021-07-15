@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Common.Models;
+using Domain.Interfaces;
+using Services.Interfaces;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Domain.Interfaces;
-using Domain.Models;
-using Services.Interfaces;
 
 namespace Services
 {
@@ -11,7 +11,7 @@ namespace Services
     {
         private readonly IURLRepository _repository;
         private readonly Random _random;
-        public URLService(IURLRepository repository) 
+        public URLService(IURLRepository repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _random = new Random();
@@ -23,14 +23,19 @@ namespace Services
 
             if (url == null)
             {
-                var shortUrl = await BuildShortUrl();
+                var shortUrl = await CreateCode();
                 return await _repository.AddURLAsync(longUrl, shortUrl);
             }
 
             return url;
         }
 
-        private async Task<string> BuildShortUrl()
+        public async Task<string> GetLongURL(string shortURL)
+        {
+            return await _repository.GetLongURLAsync(shortURL);
+        }
+
+        private async Task<string> CreateCode()
         {
             var value = GetRandomString();
             var exists = true;
@@ -39,16 +44,16 @@ namespace Services
             while (exists)
             {
                 value = GetRandomString();
-                exists = await _repository.ExistsAsync(u => u.ShortValue == value);
+                exists = await _repository.ExistsAsync(u => u.Code == value);
             }
 
-            return $"{ _repository.GetBaseUrl() }/{value}";
+            return value;
         }
 
         private string GetRandomString()
         {
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            
+
             return new string(
                 Enumerable.Repeat(chars, 8)
                           .Select(s => s[_random.Next(s.Length)])

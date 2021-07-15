@@ -7,3 +7,6 @@ C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\Domain.d
 C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\Domain.pdb
 C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
 C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+C:\Workspaces\URLShortner\UrlShortner\US.Domain\bin\Debug\netcoreapp3.1\Common.dll
+C:\Workspaces\URLShortner\UrlShortner\US.Domain\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Workspaces\URLShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CopyComplete

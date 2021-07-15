@@ -149,3 +149,5 @@ C:\Workspaces\UrlShortner\UrlShortner\Services.Unit.Tests\obj\Debug\netcoreapp3.
 C:\Workspaces\UrlShortner\UrlShortner\Services.Unit.Tests\obj\Debug\netcoreapp3.1\Services.Unit.Tests.dll
 C:\Workspaces\UrlShortner\UrlShortner\Services.Unit.Tests\obj\Debug\netcoreapp3.1\Services.Unit.Tests.pdb
 C:\Workspaces\UrlShortner\UrlShortner\Services.Unit.Tests\obj\Debug\netcoreapp3.1\Services.Unit.Tests.genruntimeconfig.cache
+C:\Workspaces\URLShortner\UrlShortner\Services.Unit.Tests\bin\Debug\netcoreapp3.1\Common.dll
+C:\Workspaces\URLShortner\UrlShortner\Services.Unit.Tests\bin\Debug\netcoreapp3.1\Common.pdb

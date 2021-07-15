@@ -72,6 +72,8 @@ namespace UrlShortner
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+
+
             });
 
             app.UseSpa(spa =>

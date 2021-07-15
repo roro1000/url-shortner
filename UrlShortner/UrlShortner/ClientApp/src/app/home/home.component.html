@@ -1,6 +1,17 @@
-<h1>TeenyURL</h1>
-<div>
-  <input id="txtLongURL" type="text" (input)="inputChange($event.target.value)"/>
-  <div *ngIf="shortURL">{{shortURL}}</div>
-  <button (click)="addUrl()">Make it teeny!</button>
+<div class="container">
+  <div class="input-container">
+    <h1>TeenyURL</h1>
+    <label for="txtLongURL">Long URL</label>
+    <div class="relative">
+      <input id="txtLongURL" type="text" [(ngModel)]="longURL" [ngClass]="{'invalid': urlError}" />
+      <span *ngIf="urlError" class="invalid">Invalid URL</span>
+    </div>
+    <button *ngIf="!shortURL" class="large" (click)="addUrl()">Make it teeny!</button>
+    <div *ngIf="shortURL">
+      <label for="txtShortURL">Teeny URL</label>
+      <input id="txtShortURL" type="text" readonly="true" [value]="shortURL" />
+      <button class="small" (click)="copyUrl()">Copy</button>
+      <button class="small" (click)="resetVals()">Shorten Another</button>
+    </div>
+  </div>
 </div>

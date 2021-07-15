@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
-using Domain.Models;
+using Common.Models;
 
 namespace Domain.Mapping
 {
@@ -9,7 +9,7 @@ namespace Domain.Mapping
         public URLMappings()
         {
             CreateMap<URL, URLDetails>()
-                .ForMember(dest => dest.ShortUrl, opt => opt.MapFrom(src => src.ShortValue));
+            .ForMember(dest => dest.Code, opt => opt.MapFrom(src => src.Code));
         }
     }
 }

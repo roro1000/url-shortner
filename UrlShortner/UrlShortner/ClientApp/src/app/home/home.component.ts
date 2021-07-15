@@ -4,22 +4,46 @@ import { URLService } from '../services/url.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 
   shortURL: string;
-  longURL: string;
+  longURL: string = "";
+  urlError: boolean = false;
 
   constructor(private urlService: URLService) { }
 
-  inputChange(value: string) {
-    this.longURL = value;
+  addUrl() {
+    this.validateUrl();
+    if (!this.urlError) {
+      this.urlService.createShortUrl(this.longURL)
+        .subscribe(data => {
+          this.shortURL = data.shortUrl;
+        });
+    }
   }
 
-  addUrl() {
-    this.urlService.createShortUrl(this.longURL)
-      .subscribe(data => {
-        this.shortURL = data.shortValue;
-      });
+  validateUrl() {
+    try {
+      new URL(this.longURL);
+      this.urlError = false;
+    } catch {
+      this.urlError = true;
+    }
+  }
+
+  copyUrl() {
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (this.shortURL));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand('copy');
+  }
+
+  resetVals() {
+    this.longURL = "";
+    this.shortURL = null;
   }
 }

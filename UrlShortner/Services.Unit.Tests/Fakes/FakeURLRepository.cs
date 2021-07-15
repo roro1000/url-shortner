@@ -1,5 +1,5 @@
-﻿using Domain.Interfaces;
-using Domain.Models;
+﻿using Common.Models;
+using Domain.Interfaces;
 using Moq;
 
 namespace Services.Unit.Tests.Fakes

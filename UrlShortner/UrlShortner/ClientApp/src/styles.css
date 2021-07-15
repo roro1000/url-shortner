@@ -14,3 +14,33 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.container{
+    margin: auto;
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+}
+
+input.invalid{
+    border-color: red !important;
+}
+
+.relative{
+    position: relative;
+}
+
+span.invalid {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  font-size: 12px;
+  color: red;
+}

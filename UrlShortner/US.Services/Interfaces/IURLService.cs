@@ -1,10 +1,11 @@
 ﻿using System.Threading.Tasks;
-using Domain.Models;
+using Common.Models;
 
 namespace Services.Interfaces
 {
     public interface IURLService
     {
         Task<URLDetails> AddShortURL(string longUrl);
+        Task<string> GetLongURL(string shortURL);
     }
 }

@@ -1,0 +1,9 @@
+C:\Workspaces\URLShortner\UrlShortner\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Workspaces\URLShortner\UrlShortner\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Workspaces\URLShortner\UrlShortner\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Workspaces\URLShortner\UrlShortner\Common\obj\Debug\netcoreapp3.1\Common.pdb

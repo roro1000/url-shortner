@@ -36,10 +36,19 @@ namespace Domain
 
         public async Task<TEntityMapping> FindAsync(Expression<Func<TEntity, bool>> exp)
         {
-            return await Context.Set<TEntity>()
+            TEntityMapping entity = null;
+            try
+            {
+                entity = await Context.Set<TEntity>()
                 .Where(exp)
                 .ProjectTo<TEntityMapping>(Mapper.ConfigurationProvider)
-                .FirstOrDefaultAsync(); ;
+                .FirstOrDefaultAsync();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return entity;
         }
     }
 }

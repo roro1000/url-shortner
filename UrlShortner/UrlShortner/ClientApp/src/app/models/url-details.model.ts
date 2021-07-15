@@ -1,3 +1,4 @@
 export class URLDetails {
-  shortValue: string
+  shortUrl: string
+  code: string;
 }

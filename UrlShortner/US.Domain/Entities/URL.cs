@@ -10,6 +10,6 @@ namespace Domain.Entities
         public string LongValue { get; set; }
 
         [Required]
-        public string ShortValue { get; set; }
+        public string Code { get; set; }
     }
 }

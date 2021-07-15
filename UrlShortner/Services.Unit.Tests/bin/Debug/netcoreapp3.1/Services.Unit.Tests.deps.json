@@ -1757,9 +1757,15 @@
           "Microsoft.NET.Test.Sdk": "16.5.0"
         }
       },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "Common": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.8",
           "Microsoft.Extensions.Options.DataAnnotations": "5.0.0"
@@ -1770,7 +1776,9 @@
       },
       "Services/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Common": "1.0.0",
+          "Domain": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2"
         },
         "runtime": {
           "Services.dll": {}
@@ -2798,6 +2806,11 @@
       "sha512": "sha512-3eq5cGXbEJkqW9nwLuXwtxy9B5gMA8i7HW4rN63AhAvy5UvEcQbZnve23wx/oPrkyg/4CbfNhxkBezS0b1oUdQ==",
       "path": "xunit.runner.visualstudio/2.4.0",
       "hashPath": "xunit.runner.visualstudio.2.4.0.nupkg.sha512"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Domain/1.0.0": {
       "type": "project",
