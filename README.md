@@ -21,3 +21,4 @@ Tool to shorten long urls
 * End point improvements
 * Ability to create user account
 * Links to share to socials
+* Middleware error handling

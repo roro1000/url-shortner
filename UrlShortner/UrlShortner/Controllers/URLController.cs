@@ -27,6 +27,10 @@ namespace UrlShortner.Controllers
         public async Task<IActionResult> GetLongURL(string id)
         {
             var url = await _service.GetLongURL(id);
+            if (url == null)
+            {
+                return NotFound();
+            }
             return Redirect(url);
         }
     }
