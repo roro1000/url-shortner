@@ -1,0 +1,6 @@
+<h1>TeenyURL</h1>
+<div>
+  <input id="txtLongURL" type="text" (input)="inputChange($event.target.value)"/>
+  <div *ngIf="shortURL">{{shortURL}}</div>
+  <button (click)="addUrl()">Make it teeny!</button>
+</div>

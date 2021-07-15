@@ -1,0 +1,5 @@
+C:\Workspaces\UrlShortner\UrlShortner\US.Domain\bin\Debug\netcoreapp3.1\TU.Domain.deps.json
+C:\Workspaces\UrlShortner\UrlShortner\US.Domain\bin\Debug\netcoreapp3.1\TU.Domain.dll
+C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\TU.Domain.csprojAssemblyReference.cache
+C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\TU.Domain.AssemblyInfoInputs.cache
+C:\Workspaces\UrlShortner\UrlShortner\US.Domain\obj\Debug\netcoreapp3.1\TU.Domain.AssemblyInfo.cs
